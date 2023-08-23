@@ -1,6 +1,6 @@
 ## Future Plans
 Recreate with different frameworks to learn
-Load more button/scroll to load on projects page for faster loading time (then I can remove the 1s delay on canvas)
+Load more button/scroll to load on projects page for faster loading time
 
 ## Credits & Links
 Code Credits: \

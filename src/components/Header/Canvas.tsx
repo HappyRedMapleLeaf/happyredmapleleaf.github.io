@@ -115,12 +115,6 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
     const fpsDraw = useRef(0)
 
     const draw = useCallback((canvas: HTMLCanvasElement) => {
-        //delay before draw start so that loading lag is less noticable
-        // if (startDelay.current < 60) {
-        //     startDelay.current += 1
-        //     return
-        // }
-
         // prevents drawing when out of view
         if (canvas.getBoundingClientRect().bottom < 0) return
 
