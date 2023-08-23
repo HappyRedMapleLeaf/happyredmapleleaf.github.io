@@ -39,7 +39,7 @@ function ProjectsContent() {
         <Body>
             <ChainAnimation>
                 <p>
-                    These are some side projects I've completed over the years.
+                    These are some side projects I've completed over the years. The first card is what I'm working on right now, or at least what's on my mind.
                     <br /><br />
                 </p>
                 <LongButton img={HomeIcon} color="#300080" href={`/`} text={"Back to Homepage"} />
@@ -47,7 +47,7 @@ function ProjectsContent() {
             <br />
             <br />
             <br />
-            <Project image={progresscard} title="In Progress" month="Now" year="">
+            <Project image={progresscard} title="Future Projects" month="W.I.P." year="">
                 <h2>What I'm Working On</h2>
                 <br />
                 <p>a) Restoring a 9th grade mouse trap car I made with a friend in tech class, which has been sitting in said friend’s basement for 3 years</p>

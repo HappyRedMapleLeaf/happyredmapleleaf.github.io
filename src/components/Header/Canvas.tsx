@@ -97,8 +97,6 @@ function matMultiply(m: number[][], i: Vec): Vec {
 }
 
 export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, zTranslate}: CanvasProps) {
-    const startDelay = useRef(0)
-
     const [rendering, setRendering] = useState(true)
 
     const canvasRef = useRef<HTMLCanvasElement>(null)
