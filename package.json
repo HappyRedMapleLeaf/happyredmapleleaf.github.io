@@ -1,7 +1,7 @@
 {
   "name": "website_prototype",
   "version": "0.1.0",
-  "homepage": "https://happyredmapleleaf.github.io/website_prototype/",
+  "homepage": "https://happyredmapleleaf.github.io/",
   "private": true,
   "dependencies": {
     "@react-spring/web": "^9.7.3",

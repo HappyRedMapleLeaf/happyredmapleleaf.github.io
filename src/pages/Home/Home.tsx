@@ -79,8 +79,8 @@ function HomeContent () {
                     All the source code for this website is on my GitHub, as well as some credits and links I found helpful while building the site.
                     <br/><br/>
                 </p>
-                <LongButton img={SourceCodeIcon} color="#300040" href="https://github.com/HappyRedMapleLeaf/website_prototype" text={"Source Code"} />
-                <LongButton img={LinksIcon} color="#300030" href="https://github.com/HappyRedMapleLeaf/website_prototype/blob/main/README.md" text={"Other Links"} />
+                <LongButton img={SourceCodeIcon} color="#300040" href="https://github.com/HappyRedMapleLeaf/happyredmapleleaf.github.io" text={"Source Code"} />
+                <LongButton img={LinksIcon} color="#300030" href="https://github.com/HappyRedMapleLeaf/happyredmapleleaf.github.io/blob/main/README.md" text={"Other Links"} />
             </ChainAnimation>
         </Body>
     )
