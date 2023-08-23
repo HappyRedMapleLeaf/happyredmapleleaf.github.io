@@ -1,5 +1,4 @@
 import './Home.css'
-import handString from "../../resources/Hand"
 import Header from '../../components/Header/Header'
 import Body from '../../components/Body/Body'
 import LongButton from '../../components/LongButton/LongButton'
@@ -89,7 +88,7 @@ function HomeContent () {
 export default function Home() {
     return (
     <>
-        <Header text="Welcome!" rotationAxis="z" object={handString} debug={false} fov={Math.PI / 3.5} yTranslate={-0.5} zTranslate={1} />
+        <Header text="Welcome!" rotationAxis="z" object="./resources/hand.obj" debug={false} fov={Math.PI / 3.5} yTranslate={-0.5} zTranslate={1} />
         <HomeContent />
     </>
     )

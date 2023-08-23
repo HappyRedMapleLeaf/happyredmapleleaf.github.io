@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback, useMemo, useState } from 'react'
+import { useRef, useEffect, useCallback, useState } from 'react'
 import "./Header.css"
 import { CanvasProps } from '../../types'
 
@@ -96,38 +96,14 @@ function matMultiply(m: number[][], i: Vec): Vec {
     return o
 }
 
-function initMesh(object: string): Triangle[] {
-    let meshCube: Triangle[] = []
-
-    //https://stackoverflow.com/questions/21711768/split-string-in-javascript-and-detect-line-break
-    let lines = object.split(/\r?\n|\r|\n/g)
-    
-    let vertices: number[][] = []
-
-    for (let i = 0; i < lines.length; i++) {
-        let line = lines[i]
-        
-        if (line[0] === "v") {
-            let coordinates: string[] = line.split(" ")
-            vertices.push([+coordinates[1], +coordinates[2], +coordinates[3]])
-        } else if (line[0] === "f") {
-            let indices: string[] = line.split(" ")
-            meshCube.push(new Triangle([vertices[+indices[1] - 1],
-                                        vertices[+indices[2] - 1],
-                                        vertices[+indices[3] - 1]], []))
-        }
-    }
-
-    return meshCube
-}
-
 export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, zTranslate}: CanvasProps) {
     const startDelay = useRef(0)
 
     const [rendering, setRendering] = useState(true)
 
     const canvasRef = useRef<HTMLCanvasElement>(null)
-    const meshCube = useMemo(() => initMesh(object), [object])
+
+    const drawModel = useRef<Triangle[]>([])
 
     const f = 1 / Math.tan(fov / 2)
     const maxAngle = Math.PI / 3
@@ -140,10 +116,10 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
 
     const draw = useCallback((canvas: HTMLCanvasElement) => {
         //delay before draw start so that loading lag is less noticable
-        if (startDelay.current < 60) {
-            startDelay.current += 1
-            return
-        }
+        // if (startDelay.current < 60) {
+        //     startDelay.current += 1
+        //     return
+        // }
 
         // prevents drawing when out of view
         if (canvas.getBoundingClientRect().bottom < 0) return
@@ -221,10 +197,10 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
                 matRot[3][3] = 1;
             }
 
-            for (let i = 0; i < meshCube.length; i++) {
+            for (let i = 0; i < drawModel.current.length; i++) {
                 // baaaare bones 3d render, no culling, no clipping, no z normalization
                 // could still be optimized quite a lot i bet but whatever
-                let tri = meshCube[i].copy()
+                let tri = drawModel.current[i].copy()
                 tri.multiply(matRot)
                 tri.translate(0.01, yTranslate, zTranslate)
                 tri.multiply(matProj)
@@ -245,7 +221,7 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
                 ctx.fillText("framerate: " + fpsDraw.current, 0, 16)
             }
         }
-    }, [mouseX, meshCube, f, maxAngle, rotationAxis, debug, yTranslate, zTranslate, rendering])
+    }, [mouseX, drawModel, f, maxAngle, rotationAxis, debug, yTranslate, zTranslate, rendering])
 
     useEffect(() => {
         const canvas = canvasRef.current
@@ -264,18 +240,46 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
 
             window.addEventListener('mousemove', mouseMoveHandler);
 
-            const render = () => {
-                draw(canvas)
-                animationFrameId = window.requestAnimationFrame(render)
-            }
-            render()
+            fetch(object)
+            .then((response) => response.text())
+            .then((text) => {
+                let model: Triangle[] = []
+
+                //https://stackoverflow.com/questions/21711768/split-string-in-javascript-and-detect-line-break
+                let lines = text.split(/\r?\n|\r|\n/g)
+                
+                let vertices: number[][] = []
+
+                for (let i = 0; i < lines.length; i++) {
+                    let line = lines[i]
+                    
+                    if (line[0] === "v") {
+                        let coordinates: string[] = line.split(" ")
+                        vertices.push([+coordinates[1], +coordinates[2], +coordinates[3]])
+                    } else if (line[0] === "f") {
+                        let indices: string[] = line.split(" ")
+                        model.push(new Triangle([vertices[+indices[1] - 1],
+                                                    vertices[+indices[2] - 1],
+                                                    vertices[+indices[3] - 1]], []))
+                    }
+                }
+
+                drawModel.current = model
+
+                const render = () => {
+                    draw(canvas)
+                    animationFrameId = window.requestAnimationFrame(render)
+                }
+
+                render()
+            })
 
             return () => {
                 window.removeEventListener('mousemove', mouseMoveHandler);
                 window.cancelAnimationFrame(animationFrameId)
             }
         }
-    }, [draw])
+    }, [draw, object])
 
     return (
         //for some reason having a 100vw x 100vh div with a 100% x 100% canvas in it makes the canvas resize properly when the browser zooms,

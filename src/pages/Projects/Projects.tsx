@@ -1,5 +1,4 @@
 import './Projects.css'
-import robotString from "../../resources/Robot"
 import Header from '../../components/Header/Header'
 import Body from '../../components/Body/Body'
 import LongButton from '../../components/LongButton/LongButton'
@@ -159,7 +158,7 @@ function ProjectsContent() {
 export default function Projects() {
     return (
         <>
-            <Header text="Projects" rotationAxis="y" object={robotString} debug={false} fov={Math.PI / 4} yTranslate={-0.45} zTranslate={2}/>
+            <Header text="Projects" rotationAxis="y" object="./resources/robot.obj" debug={false} fov={Math.PI / 4} yTranslate={-0.45} zTranslate={2}/>
             <ProjectsContent />
         </>
     )
