@@ -32,6 +32,7 @@ import progresscard from "../../images/projects/progresscard.png"
 
 import site1 from "../../images/projects/site1.png"
 import site2 from "../../images/projects/site2.png"
+import { useEffect } from 'react'
 
 
 function ProjectsContent() {
@@ -156,6 +157,10 @@ function ProjectsContent() {
 }
 
 export default function Projects() {
+    useEffect(() => {
+        document.title = "Projects | Evan Li"
+    })
+
     return (
         <>
             <Header text="Projects" rotationAxis="y" object="./resources/robot.obj" debug={false} fov={Math.PI / 4} yTranslate={-0.45} zTranslate={2}/>

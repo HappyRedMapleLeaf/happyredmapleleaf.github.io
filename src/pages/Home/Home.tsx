@@ -11,6 +11,7 @@ import ProjectsIcon from "../../images/longButtonIcons/projects.svg"
 import YouTubeLogo from "../../images/longButtonIcons/youtube1.png"
 import SourceCodeIcon from "../../images/longButtonIcons/code2.svg"
 import LinksIcon from "../../images/longButtonIcons/link.svg"
+import { useEffect } from 'react'
 
 function HomeContent () {
     return (
@@ -86,6 +87,10 @@ function HomeContent () {
 }
 
 export default function Home() {
+    useEffect(() => {
+        document.title = "Home | Evan Li"
+    })
+
     return (
     <>
         <Header text="Welcome!" rotationAxis="z" object="./resources/hand.obj" debug={false} fov={Math.PI / 3.5} yTranslate={-0.5} zTranslate={1} />
