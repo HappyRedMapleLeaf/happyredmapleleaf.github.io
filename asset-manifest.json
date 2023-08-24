@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.aa4d2586.css",
-    "main.js": "/static/js/main.06654ad9.js",
+    "main.js": "/static/js/main.48abcc8c.js",
     "static/media/ppbcard.png": "/static/media/ppbcard.358a7345447416954db9.png",
     "static/media/lockcard.png": "/static/media/lockcard.3c2abce5cd1daf30ecc5.png",
     "static/media/guncard.png": "/static/media/guncard.33476bf4a4fc43e09529.png",
@@ -35,10 +35,10 @@
     "static/media/home.svg": "/static/media/home.bcfe739ffef53123cbe9f7975ee6fd58.svg",
     "static/media/code2.svg": "/static/media/code2.39c69ce2011a96cbaaf08e51c997e806.svg",
     "main.aa4d2586.css.map": "/static/css/main.aa4d2586.css.map",
-    "main.06654ad9.js.map": "/static/js/main.06654ad9.js.map"
+    "main.48abcc8c.js.map": "/static/js/main.48abcc8c.js.map"
   },
   "entrypoints": [
     "static/css/main.aa4d2586.css",
-    "static/js/main.06654ad9.js"
+    "static/js/main.48abcc8c.js"
   ]
 }
