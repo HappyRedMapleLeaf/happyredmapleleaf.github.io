@@ -9,6 +9,7 @@ import FixedEmbed from '../../components/FixedEmbed/FixedEmbed'
 import HomeIcon from "../../images/longButtonIcons/home.svg"
 import devlogo from "../../images/longButtonIcons/devlogo.png"
 import instalogo from "../../images/longButtonIcons/instalogo.png"
+import github1 from "../../images/longButtonIcons/github1.png"
 
 import keylock from "../../images/projects/keylock.jpg"
 import ssacard from "../../images/projects/ssacard.png"
@@ -29,6 +30,7 @@ import lockcard from "../../images/projects/lockcard.png"
 import hangcard from "../../images/projects/hangcard.jpg"
 import sitecard from "../../images/projects/sitecard.png"
 import progresscard from "../../images/projects/progresscard.png"
+import e from "../../images/projects/e.png"
 
 import site1 from "../../images/projects/site1.png"
 import site2 from "../../images/projects/site2.png"
@@ -114,6 +116,14 @@ function ProjectsContent() {
                 <p>Continuing my obsession with locks (see the LEGO Combo Lock below), I made a horrible-looking but functional key lock with LEGO. I didn’t have many parts to work with, but I’m still quite happy with how well it worked. I also made a YouTube video explaining my lock and locks in general.</p>
                 <br />
                 <FixedEmbed src="https://www.youtube.com/embed/i_A5MMc-gP0" />
+                <br />
+            </Project>
+            <Project image={e} title="E-Bot" month="Oct" year="2021">
+                <h2>Discord E-Bot</h2>
+                <br />
+                <p>An incredibly silly Discord bot I made with Python - the full story is on the GitHub repo's readme. Although I did it "for the memes", I learned about using API's, asynchronous programming, web servers, authentication, databases, and more fancy web app related things that I'm sure will be helpful in the future.</p>
+                <br />
+                <LongButton img={github1} color="#300050" href={`https://github.com/HappyRedMapleLeaf/E-Bot`} text={"Code Repository"} />
                 <br />
             </Project>
             <Project image={ppbcard} title="Pong Revolver" month="Jan" year="2021">
