@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.aa4d2586.css",
-    "main.js": "/static/js/main.01882925.js",
+    "main.js": "/static/js/main.f09660e1.js",
+    "static/media/bouncecard.png": "/static/media/bouncecard.2c03488af8b1c97f3860.png",
     "static/media/ppbcard.png": "/static/media/ppbcard.358a7345447416954db9.png",
     "static/media/lockcard.png": "/static/media/lockcard.3c2abce5cd1daf30ecc5.png",
     "static/media/guncard.png": "/static/media/guncard.33476bf4a4fc43e09529.png",
     "static/media/sitecard.png": "/static/media/sitecard.28758223026dd2c43b70.png",
+    "static/media/accept2.png": "/static/media/accept2.f4a5def71207cadb64cf.png",
     "static/media/progresscard.png": "/static/media/progresscard.509bdf1a5b150ccc76ef.png",
     "static/media/e.png": "/static/media/e.4b034c66f42ffdcdb955.png",
     "static/media/site1.png": "/static/media/site1.6b88ab5c9fda6811e177.png",
@@ -14,16 +16,20 @@
     "static/media/dev1.png": "/static/media/dev1.d7390310f8057c973f56.png",
     "static/media/hangcard.jpg": "/static/media/hangcard.a48010e7360fb2725dae.jpg",
     "static/media/fscard.jpg": "/static/media/fscard.eac4bccd1e36e4b4bbaf.jpg",
+    "static/media/bounce2.png": "/static/media/bounce2.c2fa7c351bb7ec88c6d4.png",
     "static/media/keylock.jpg": "/static/media/keylock.079b3e20d0f3359ea0b9.jpg",
+    "static/media/bounce1.png": "/static/media/bounce1.4c2ccff2e6672e6bfe5c.png",
     "static/media/dev2.jpg": "/static/media/dev2.253ae2af576efd689ba3.jpg",
     "static/media/ssa1.jpg": "/static/media/ssa1.56e7242e77add2ce0562.jpg",
     "static/media/ssacard.png": "/static/media/ssacard.43a57a2c3684489abb7b.png",
+    "static/media/accept1.png": "/static/media/accept1.6667fb654c791d7a043d.png",
     "static/media/ssa2.jpg": "/static/media/ssa2.a6aeb6bf4d5ec9e6f204.jpg",
     "static/media/fs1.jpg": "/static/media/fs1.b22ebeec0ffb4baec223.jpg",
     "static/media/site2.png": "/static/media/site2.43f9896489b73df6303c.png",
     "static/media/devlogo.png": "/static/media/devlogo.0b87f4694c3d3f824d57.png",
     "static/media/fs2.jpg": "/static/media/fs2.39a5b6f0e966b62c433a.jpg",
     "static/media/instalogo.png": "/static/media/instalogo.22958f9c42cb3f6399a4.png",
+    "static/media/acceptcard.png": "/static/media/acceptcard.78f87490bf747410f969.png",
     "static/media/github1.png": "/static/media/github1.ec35d277abeac184dbe3.png",
     "static/media/youtube1.png": "/static/media/youtube1.b917a68f7ff019ce46e5.png",
     "static/media/footer1.png": "/static/media/footer1.c6a1c66fbcc581ea9605.png",
@@ -36,10 +42,10 @@
     "static/media/home.svg": "/static/media/home.bcfe739ffef53123cbe9f7975ee6fd58.svg",
     "static/media/code2.svg": "/static/media/code2.39c69ce2011a96cbaaf08e51c997e806.svg",
     "main.aa4d2586.css.map": "/static/css/main.aa4d2586.css.map",
-    "main.01882925.js.map": "/static/js/main.01882925.js.map"
+    "main.f09660e1.js.map": "/static/js/main.f09660e1.js.map"
   },
   "entrypoints": [
     "static/css/main.aa4d2586.css",
-    "static/js/main.01882925.js"
+    "static/js/main.f09660e1.js"
   ]
 }
