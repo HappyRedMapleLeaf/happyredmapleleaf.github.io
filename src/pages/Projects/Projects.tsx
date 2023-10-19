@@ -10,6 +10,7 @@ import HomeIcon from "../../images/longButtonIcons/home.svg"
 import devlogo from "../../images/longButtonIcons/devlogo.png"
 import instalogo from "../../images/longButtonIcons/instalogo.png"
 import github1 from "../../images/longButtonIcons/github1.png"
+import link from "../../images/longButtonIcons/link.svg"
 
 import keylock from "../../images/projects/keylock.jpg"
 import ssacard from "../../images/projects/ssacard.png"
@@ -23,6 +24,14 @@ import dev2 from "../../images/projects/dev2.jpg"
 import fscard from "../../images/projects/fscard.jpg"
 import fs1 from "../../images/projects/fs1.jpg"
 import fs2 from "../../images/projects/fs2.jpg"
+
+import bouncecard from "../../images/projects/bouncecard.png"
+import bounce1 from "../../images/projects/bounce1.png"
+import bounce2 from "../../images/projects/bounce2.png"
+
+import acceptcard from "../../images/projects/acceptcard.png"
+import accept1 from "../../images/projects/accept1.png"
+import accept2 from "../../images/projects/accept2.png"
 
 import ppbcard from "../../images/projects/ppbcard.png"
 import guncard from "../../images/projects/guncard.png"
@@ -53,11 +62,13 @@ function ProjectsContent() {
             <Project image={progresscard} title="Future Projects" month="W.I.P." year="">
                 <h2>What I'm Working On</h2>
                 <br />
-                <p>a) Restoring a 9th grade mouse trap car I made with a friend in tech class, which has been sitting in said friend’s basement for 3 years</p>
+                <p>a) Firmware and Powertrain Subteam member on the University of Waterloo Formula Electric team</p>
                 <br />
-                <p>b) Learning about web servers and making some kind of primitive remote access software for fun</p>
+                <p>b) Learning assembly by making a very basic program</p>
                 <br />
-                <p>c) Making a shoe attachment that turns it into a wirelessly controlled retractable roller skate</p>
+                <p>c) Making an updated interactive map of Waterloo that includes room numbers, gps support, visual display of different floors and elevations, and a way to find the optimal path to a certain room.</p>
+                <br />
+                <p>d) Making a shoe attachment that turns it into a wirelessly controlled retractable roller skate</p>
                 <br />
             </Project>
             <Project image={sitecard} title="This Website!" month="Aug" year="2023">
@@ -82,6 +93,19 @@ function ProjectsContent() {
                 <p>It didn’t go perfectly, with some holes being slanted and with my wall being slightly broken after a failed mounting attempt, but it was a relaxing project to start my summer off with. I also got some practice with design and CAD, and I got a lot better at basic woodworking.</p>
                 <br />
                 <FixedEmbed src="https://www.youtube.com/embed/3is3RLBoPuQ" />
+                <br />
+            </Project>
+            <Project image={bouncecard} title="Bounce Back" month="Jun" year="2023">
+                <h2>Bounce Back - Game</h2>
+                <br />
+                <p>A top-down survival-ish game set in a dense city, where the goal is to obtain a stable income, submitted in June 2023 as the final assignment for my grade 12 computer science course. It might not look pretty, but it was one of my most technically advanced projects yet.</p>
+                <br />
+                <p>The main technical challenge with this game was the collision detection and bouncing of the circular player hitbox with the tile-based world. The level is also randomly generated and practically infinite, using some procedural generation-esque techniques. The player can load and save the game, where progress made in the world is stored in "chunks" (to avoid needing to save a very, very large array) similar to the system used in games like Minecraft.</p>
+                <br />
+                <LongButton img={link} color="#300080" href={`https://github.com/HappyRedMapleLeaf/Bounce_Back_Game`} text={"Source Code"} />
+                <img width="48%" style={{marginRight: "4%"}} src={bounce1} alt="Screenshot of menu" />
+                <img width="48%" src={bounce2} alt="Screenshot of gameplay" />
+                <br />
                 <br />
             </Project>
             <Project image={devcard} title="Devolotics" month="Apr" year="2023">
@@ -110,6 +134,21 @@ function ProjectsContent() {
                 <br />
                 <br />
             </Project>
+            <Project image={acceptcard} title="Accept" month="Jun" year="2022">
+                <h2>Accept - Game</h2>
+                <br />
+                <p>A short top-down point-and-click story game following Freddie's journey towards university acceptance, submitted in June 2022 as the final assignment for my grade 11 computer science course.</p>
+                <br />
+                <p>The main technical challenge of this program was the collision detection and resolution between the square player hitbox and the rectangular blocks that make the different levels. The levels are defined with the coordinates and sizes of the rectangles in pixels rather than an array representing a square grid. This makes level creation easier and more flexible, but also makes collisions a bit more complex.</p>
+                <br />
+                <p>Some other challenges included the somewhat realistic physics simulation in the minigame, as well as the point-and-click movement.</p>
+                <br />
+                <LongButton img={link} color="#300050" href={`https://github.com/HappyRedMapleLeaf/Accept_Game`} text={"Source Code"} />
+                <img width="48%" style={{marginRight: "4%"}} src={accept1} alt="Screenshot of gameplay" />
+                <img width="48%" src={accept2} alt="Screenshot of gameplay" />
+                <br />
+                <br />
+            </Project>
             <Project image={keylock} title="LEGO Key Lock" month="Apr" year="2022">
                 <h2>LEGO Key Lock</h2>
                 <br />
@@ -123,7 +162,7 @@ function ProjectsContent() {
                 <br />
                 <p>An incredibly silly Discord bot I made with Python - the full story is on the GitHub repo's readme. Although I did it "for the memes", I learned about using API's, asynchronous programming, web servers, authentication, databases, and more fancy web app related things that I'm sure will be helpful in the future.</p>
                 <br />
-                <LongButton img={github1} color="#300050" href={`https://github.com/HappyRedMapleLeaf/E-Bot`} text={"Code Repository"} />
+                <LongButton img={github1} color="#300040" href={`https://github.com/HappyRedMapleLeaf/E-Bot`} text={"Code Repository"} />
                 <br />
             </Project>
             <Project image={ppbcard} title="Pong Revolver" month="Jan" year="2021">
