@@ -33,6 +33,10 @@ import acceptcard from "../../images/projects/acceptcard.png"
 import accept1 from "../../images/projects/accept1.png"
 import accept2 from "../../images/projects/accept2.png"
 
+import milkcard from "../../images/projects/milkcard.jpg"
+import milk1 from "../../images/projects/milk1.png"
+import milk2 from "../../images/projects/milk2.jpg"
+
 import ppbcard from "../../images/projects/ppbcard.png"
 import guncard from "../../images/projects/guncard.png"
 import lockcard from "../../images/projects/lockcard.png"
@@ -71,12 +75,28 @@ function ProjectsContent() {
                 <p>d) Making a shoe attachment that turns it into a wirelessly controlled retractable roller skate</p>
                 <br />
             </Project>
+            <Project image={milkcard} title="Milk Alarm" month="Nov" year="2023">
+                <h2>Spoiled Milk Alarm</h2>
+                <br />
+                <p>For my ECE198 Project Studio course at the University of Waterloo, my groupmate Rongbin and I designed and prototyped a milk bag holder that tells users if milk is spoiled. This device uses the STM32 Nucleo microcontroller and involves 5 inputs (2 buttons, a temperature sensor, a light sensor, and a force sensor) and 5 outputs (four LEDs and a buzzer).</p>
+                <br />
+                <p>Through this project I became familiar with C and microcontroller programming and learned the basics of circuit design. I also had the chance to use ADCs, PWM signal generation, and Git (repo linked below).</p>
+                <br />
+                <p>Below left: CAD model of the device. Below right: The circuitry monstrosity behind it all</p>
+                <br />
+                <img width="48%" style={{marginRight: "4%"}} src={milk1} alt="CAD model of the device" />
+                <img width="48%" src={milk2} alt="The circuitry monstrosity behind it all" />
+                <br />
+                <br />
+                <LongButton img={link} color="#300090" href={`https://github.com/HappyRedMapleLeaf/ece198_final`} text={"Source Code"} />
+                <br />
+            </Project>
             <Project image={sitecard} title="This Website!" month="Aug" year="2023">
                 <h2>This Website!</h2>
                 <br />
                 <p>This was a “three birds with one stone” project where I learned about React.js, TypeScript, and web development, made a portfolio for myself with links to my other profiles, and got to show off a bit to my friends.</p>
                 <br />
-                <p>I’ve built simple websites before, but for this one I put emphasis on: compatibility, having tested my website on 6 different browsers; user experience, ensuring accessibility and ease of navigation on all devices; performance, optimizing my “DIY” 3D wireframe render; and good code practise (who am I kidding, it’s still bad), adding some comments and making sure the code is reusable and repairable.</p>
+                <p>I’ve built simple websites before, but for this one I put emphasis on: compatibility, having tested my website on 7 different browsers; user experience, ensuring accessibility and ease of navigation on all devices; performance, optimizing my “DIY” 3D wireframe render; and good code practise, adding some comments and making sure the code is reusable and repairable.</p>
                 <br />
                 <p>Below left: the 3D model rendered on the top of this page. Below right: an old testing version of this website</p>
                 <br />
