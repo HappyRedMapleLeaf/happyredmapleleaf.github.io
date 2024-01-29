@@ -207,7 +207,6 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
             }
 
             if (debug) {
-                console.log("spam")
                 ctx.fillStyle = "#FFFFFF"
                 ctx.font = "16px Consolas"
                 ctx.fillText("framerate: " + fpsDraw.current, 0, 16)
