@@ -68,11 +68,11 @@ function ProjectsContent() {
                 <br />
                 <p>a) Firmware and Powertrain Subteam member on the University of Waterloo Formula Electric team</p>
                 <br />
-                <p>b) Learning assembly by making a very basic program</p>
+                <p>b) Firmware and Hardware member on the UW Reality Labs team</p>
                 <br />
-                <p>c) Making an updated interactive map of Waterloo that includes room numbers, gps support, visual display of different floors and elevations, and a way to find the optimal path to a certain room.</p>
+                <p>c) A voice-controlled robotics "third arm" to help with building and tinkering.</p>
                 <br />
-                <p>d) Making a shoe attachment that turns it into a wirelessly controlled retractable roller skate</p>
+                <p>d) A shoe attachment that turns it into a wirelessly controlled retractable roller skate</p>
                 <br />
             </Project>
             <Project image={milkcard} title="Milk Alarm" month="Nov" year="2023">
