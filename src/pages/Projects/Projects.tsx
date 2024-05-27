@@ -55,7 +55,7 @@ function ProjectsContent() {
         <Body>
             <ChainAnimation>
                 <p>
-                    These are some side projects I've completed over the years. The first card is what I'm working on right now, or at least what's on my mind.
+                    These are some projects I've completed over the years (some of them on a team!), from woodworking to game development. The first card is what I'm working on right now, or at least what's on my mind.
                     <br /><br />
                 </p>
                 <LongButton img={HomeIcon} color="#300080" href={`/`} text={"Back to Homepage"} />
@@ -68,7 +68,7 @@ function ProjectsContent() {
                 <br />
                 <p>a) Firmware and Powertrain Subteam member on the University of Waterloo Formula Electric team</p>
                 <br />
-                <p>b) Firmware and Hardware member on the UW Reality Labs team</p>
+                <p>b) Hardware member on the UW Reality Labs team</p>
                 <br />
                 <p>c) A voice-controlled robotics "third arm" to help with building and tinkering.</p>
                 <br />
@@ -88,7 +88,7 @@ function ProjectsContent() {
                 <img width="48%" src={milk2} alt="The circuitry monstrosity behind it all" />
                 <br />
                 <br />
-                <LongButton img={link} color="#300090" href={`https://github.com/HappyRedMapleLeaf/ece198_final`} text={"Source Code"} />
+                <LongButton img={link} color="#300090" href={`https://github.com/HappyRedMapleLeaf/FreshGuard`} text={"Source Code"} />
                 <br />
             </Project>
             <Project image={sitecard} title="This Website!" month="Aug" year="2023">
@@ -96,7 +96,7 @@ function ProjectsContent() {
                 <br />
                 <p>This was a “three birds with one stone” project where I learned about React.js, TypeScript, and web development, made a portfolio for myself with links to my other profiles, and got to show off a bit to my friends.</p>
                 <br />
-                <p>I’ve built simple websites before, but for this one I put emphasis on: compatibility, having tested my website on 7 different browsers; user experience, ensuring accessibility and ease of navigation on all devices; performance, optimizing my “DIY” 3D wireframe render; and good code practise, adding some comments and making sure the code is reusable and repairable.</p>
+                <p>I've built simple websites before, but for this one I put emphasis on: compatibility, having tested my website on 7 different browsers; user experience, ensuring accessibility and ease of navigation on all devices; performance, optimizing my “DIY” 3D wireframe render; and good code practise, adding some comments and making sure the code is reusable and repairable.</p>
                 <br />
                 <p>Below left: the 3D model rendered on the top of this page. Below right: an old testing version of this website</p>
                 <br />
@@ -110,7 +110,7 @@ function ProjectsContent() {
                 <br />
                 <p>This was a quick one-week project where I made two hangboards from pine wood and some old tools. I was getting into climbing around this time, and I wanted a way to train in the comfort of my own home.</p>
                 <br />
-                <p>It didn’t go perfectly, with some holes being slanted and with my wall being slightly broken after a failed mounting attempt, but it was a relaxing project to start my summer off with. I also got some practice with design and CAD, and I got a lot better at basic woodworking.</p>
+                <p>It didn't go perfectly, with some holes being slanted and with my wall being slightly broken after a failed mounting attempt, but it was a relaxing project to start my summer off with. I also got some practice with design and CAD, and I got a lot better at basic woodworking.</p>
                 <br />
                 <FixedEmbed src="https://www.youtube.com/embed/3is3RLBoPuQ" />
                 <br />
@@ -133,7 +133,7 @@ function ProjectsContent() {
                 <br />
                 <p>I was the captain of FIRST Tech Challenge team 19498 Devolotics for two years since its formation, leading the mechanical design and programming of our approximately 0.5x0.5x0.5m large robots over two seasons.</p>
                 <br />
-                <p>In my second year, after over 10,000 combined hours from our team, we became one of two Ontario teams to qualify to the World Championships in Houston, Texas. I’d say that this is by far my proudest achievement to date. Devolotics forever! Some pictures are below.</p>
+                <p>In my second year, after over 10,000 combined hours from our team, we became one of two Ontario teams to qualify to the World Championships in Houston, Texas. I'd say that this is by far my proudest achievement to date. Devolotics forever! Some pictures are below.</p>
                 <br />
                 <LongButton img={devlogo} color="#300070" href={`https://devolotics.github.io/`} text={"Our Website"} />
                 <img width="48%" style={{marginRight: "4%"}} src={dev1} alt="Our Robot" />
@@ -146,7 +146,7 @@ function ProjectsContent() {
                 <br />
                 <p>My robotics team (see above) wanted to inspire our community with robotics, so as a group effort, we founded the Scarborough STEM Alliance (or SSA), a non-profit organization that has now reached thousands of youth through robotics and programming workshops at schools, libraries, and community centres.</p>
                 <br />
-                <p>Working with teachers, volunteers, other organizations, and even the government, I think we’ve significantly changed a few lives through our work, just like robotics has changed mine.</p>
+                <p>Working with teachers, volunteers, other organizations, and even the government, I think we've significantly changed a few lives through our work, just like robotics has changed mine.</p>
                 <br />
                 <LongButton img={instalogo} color="#300060" href={`https://www.instagram.com/scarborough.stem.alliance/`} text={"SSA Instagram"} />
                 <img width="48%" style={{marginRight: "4%"}} src={ssa1} alt="Workshop at Forest Manor Public School" />
@@ -172,7 +172,7 @@ function ProjectsContent() {
             <Project image={keylock} title="LEGO Key Lock" month="Apr" year="2022">
                 <h2>LEGO Key Lock</h2>
                 <br />
-                <p>Continuing my obsession with locks (see the LEGO Combo Lock below), I made a horrible-looking but functional key lock with LEGO. I didn’t have many parts to work with, but I’m still quite happy with how well it worked. I also made a YouTube video explaining my lock and locks in general.</p>
+                <p>Continuing my obsession with locks (see the LEGO Combo Lock below), I made a horrible-looking but functional key lock with LEGO. I didn't have many parts to work with, but I'm still quite happy with how well it worked. I also made a YouTube video explaining my lock and locks in general.</p>
                 <br />
                 <FixedEmbed src="https://www.youtube.com/embed/i_A5MMc-gP0" />
                 <br />
@@ -204,7 +204,7 @@ function ProjectsContent() {
             <Project image={lockcard} title={"Combo Lock"} month="Nov" year="2019">
                 <h2>LEGO Combination Lock</h2>
                 <br />
-                <p>My combo lock at school stopped working and had to be cut, so I took it apart to see how it worked. Eventually, I recreated the mechanism using LEGO. I even made a YouTube video about it, which admittedly wasn’t very good.</p>
+                <p>My combo lock at school stopped working and had to be cut, so I took it apart to see how it worked. Eventually, I recreated the mechanism using LEGO. I even made a YouTube video about it, which admittedly wasn't very good.</p>
                 <br />
                 <FixedEmbed src="https://www.youtube.com/embed/ZziNasU4CpY" />
                 <br />
@@ -212,9 +212,9 @@ function ProjectsContent() {
             <Project image={fscard} title="Firestorm" month="Feb" year="2018">
                 <h2>FIRST Lego League</h2>
                 <br />
-                <p>In middle school, I joined a FIRST Lego League team, #26746 Firestorm. In my first year, although our robot wasn’t very impressive, we made it to the provincial tournament and even got to share our innovation project (an umbrella that catches rain into a filter water bottle to conserve water) at the Ontario Innovation Celebration. In my second year, we didn’t make it as far, but we did win the Robot Design award at a qualifying tournament.</p>
+                <p>In middle school, I joined a FIRST Lego League team, #26746 Firestorm. In my first year, although our robot wasn't very impressive, we made it to the provincial tournament and even got to share our innovation project (an umbrella that catches rain into a filter water bottle to conserve water) at the Ontario Innovation Celebration. In my second year, we didn't make it as far, but we did win the Robot Design award at a qualifying tournament.</p>
                 <br />
-                <p>This was my first ever exposure to robotics, and I’m forever grateful for this experience.</p>
+                <p>This was my first ever exposure to robotics, and I'm forever grateful for this experience.</p>
                 <br />
                 <img width="48%" style={{marginRight: "4%"}} src={fs1} alt="Our robot" />
                 <img width="48%" src={fs2} alt="Our innovation" />

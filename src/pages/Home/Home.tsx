@@ -41,13 +41,13 @@ function HomeContent () {
                     A Quick Introduction
                 </h2>
                 <p>
-                    Having just graduated from Dr. Norman Bethune CI, I’m now heading into the University of Waterloo’s computer engineering program. Eventually, I hope to work with low-level software, and I’m especially interested in robotics. Perhaps my robotics addiction will go away soon, but I don’t think it will.
+                    Having graduated from Dr. Norman Bethune CI in 2023, I'm now at the University of Waterloo's computer engineering program. I love embedded software and anything low level, especially in the context of robotics. I occasionally enjoy doing mechanical work too.
                 </p>
                 <p>
                     I also love the outdoors (engineering student touching grass? impossible) and I enjoy camping, fishing, snowboarding, and going on nice little walks or bike rides.
                 </p>
                 <p>
-                    I spend a lot of my time working on a variety of personal projects, from woodworking to, well, website development. Check out a detailed timeline of my projects on the Projects page! Most of them aren't very significant or impressive, but I'm happy with them anyways. I also make music or art from time to time, but it's certainly not very good and I just do it for fun.
+                    Check out my projects page for a timeline of the stuff I've been working on outside of work and school. A lot of is just for fun and certainly not related to any career goals, but I'm proud of it all the same.
                     <br/><br/>
                 </p>
                 <LongButton img={ProjectsIcon} color="#300060" href={`/projects`} text={"Projects"} />
@@ -60,7 +60,7 @@ function HomeContent () {
                     What's Up With the Username?
                 </h2>
                 <p>
-                    It’s a long story that I don't completely remember, but my fourth grade self needed a new name for my YouTube channel… that had about 2 videos on it. I guess I felt particularly Canadian that day, and I held on to the “Happy Red Maple Leaf” username ever since. I’ve also made some graphics over the years to serve as profile pictures, banners, etc.
+                    It's a long story that I don't completely remember, but my fourth grade self needed a new name for my YouTube channel… that had about 2 videos on it at the time. I guess I felt particularly Canadian that day, and I held on to the “Happy Red Maple Leaf” username ever since.
                 </p>
                 <p>
                     Now, I occasionally use the YouTube channel to dump gaming videos or quick showcases on any project, big or small, that I end up finishing.
