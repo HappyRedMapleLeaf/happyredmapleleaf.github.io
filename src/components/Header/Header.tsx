@@ -40,7 +40,7 @@ function HeaderText({text}: HeaderTextProps) {
     )
 }
 
-export default function Header({rotationAxis, object, debug, fov, yTranslate, zTranslate, text}: HeaderProps) {
+export default function Header({rotationAxis, object, debug, fov, xTranslate, yTranslate, zTranslate, text}: HeaderProps) {
     return (
         <>
             <div className="Head">
@@ -49,6 +49,7 @@ export default function Header({rotationAxis, object, debug, fov, yTranslate, zT
                         object={object}
                         debug={debug}
                         fov={fov}
+                        xTranslate={xTranslate}
                         yTranslate={yTranslate}
                         zTranslate={zTranslate}/>
             </div>

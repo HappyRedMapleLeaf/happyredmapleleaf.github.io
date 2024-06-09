@@ -96,7 +96,7 @@ function matMultiply(m: number[][], i: Vec): Vec {
     return o
 }
 
-export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, zTranslate}: CanvasProps) {
+export default function Canvas ({rotationAxis, object, debug, fov, xTranslate, yTranslate, zTranslate}: CanvasProps) {
     const [rendering, setRendering] = useState(true)
 
     const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -194,7 +194,7 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
                 // could still be optimized quite a lot i bet but whatever
                 let tri = drawModel.current[i].copy()
                 tri.multiply(matRot)
-                tri.translate(0.01, yTranslate, zTranslate)
+                tri.translate(xTranslate, yTranslate, zTranslate)
                 tri.multiply(matProj)
                 tri.scale(-1, -1, 1) //+x is left and +y is up for +z to be out of the camera. on the screen, +x is right and +y is down, so flip x and y
                 tri.translate(1, 1, 0)
@@ -212,7 +212,7 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
                 ctx.fillText("framerate: " + fpsDraw.current, 0, 16)
             }
         }
-    }, [mouseX, drawModel, f, maxAngle, rotationAxis, debug, yTranslate, zTranslate, rendering])
+    }, [mouseX, drawModel, f, maxAngle, rotationAxis, debug, xTranslate, yTranslate, zTranslate, rendering])
 
     useEffect(() => {
         const canvas = canvasRef.current
@@ -249,9 +249,14 @@ export default function Canvas ({rotationAxis, object, debug, fov, yTranslate, z
                         vertices.push([+coordinates[1], +coordinates[2], +coordinates[3]])
                     } else if (line[0] === "f") {
                         let indices: string[] = line.split(" ")
-                        model.push(new Triangle([vertices[+indices[1] - 1],
-                                                    vertices[+indices[2] - 1],
-                                                    vertices[+indices[3] - 1]], []))
+                        
+                        let v1 = indices[1].split("//")[0]
+                        let v2 = indices[2].split("//")[0]
+                        let v3 = indices[3].split("//")[0]
+
+                        model.push(new Triangle([vertices[+v1 - 1],
+                                                    vertices[+v2 - 1],
+                                                    vertices[+v3 - 1]], []))
                     }
                 }
 

@@ -8,6 +8,7 @@ import ScrollButton from "./components/ScrollButton/ScrollButton"
 
 import Home from "./pages/Home/Home"
 import Projects from "./pages/Projects/Projects"
+import Portfolio from "./pages/Portfolio/Portfolio"
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -25,6 +26,7 @@ export default function App() {
             <ScrollToTop />
                 <Routes>
                     <Route path='/projects' element={<Projects />}></Route>
+                    <Route path='/portfolio' element={<Portfolio />}></Route>
                     <Route path='/' element={<Home />}></Route>
                 </Routes>
             <Footer />

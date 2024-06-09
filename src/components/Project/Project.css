@@ -8,13 +8,13 @@
 }
 
 .Left {
-    width: min(10%, 80px);
+    width: min(10%, 60px);
     position: relative;
 }
 
 .Right {
     margin-left: 10px;
-    width: calc(100% - min(10%, 80px) - 10px);
+    width: calc(100% - min(10%, 60px) - 10px);
 }
 
 .Top {
@@ -25,22 +25,24 @@
 .Bottom {
     height: min(2.7vw, 24px);
 }
-
+/* 
 .Right .Middle {
-    background-color: #2e2e2e;
-}
+    background-color: #111111;
+} */
 
 .Left .Top {
-    background-image: url('../../images/timelineTop.png');
+    /* background-image: url('../../images/timelineTop.png'); */
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center top;
 }
 
 .Left .Middle {
-    background-image: url('../../images/timeline.png');
-    background-repeat: repeat-y;
+    background-image: url('../../images/gradient.png');
+    /* background-repeat: repeat-y; */
     background-size: 30% 100%;
+    background-repeat: no-repeat;
+    /* background-size: 30% 100%; */
     background-position: center;
     display: flex;
     align-items: center;
@@ -48,7 +50,7 @@
 }
 
 .Left .Bottom {
-    background-image: url('../../images/timelineBottom.png');
+    /* background-image: url('../../images/timelineBottom.png'); */
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center bottom;
@@ -58,9 +60,11 @@
     position: absolute;
     width: 90%;
     filter: blur(1px);
+    user-select: none;
 }
 
 .Left p {
+    color: #97c1ce;
     z-index: 1;
     margin-top: -22px;
     text-align: center;

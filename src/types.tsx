@@ -7,6 +7,7 @@ export type CanvasProps = {
     object: string
     debug: boolean,
     fov: number,
+    xTranslate: number,
     yTranslate: number,
     zTranslate: number
 }
@@ -16,6 +17,7 @@ export type HeaderProps = {
     object: string
     debug: boolean,
     fov: number,
+    xTranslate: number,
     yTranslate: number,
     zTranslate: number,
     text: string

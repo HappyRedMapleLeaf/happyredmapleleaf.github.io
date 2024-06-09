@@ -6,20 +6,13 @@ import ChainAnimation from '../../components/ChainAnimation'
 import Project from '../../components/Project/Project'
 import FixedEmbed from '../../components/FixedEmbed/FixedEmbed'
 
-import HomeIcon from "../../images/longButtonIcons/home.svg"
-import devlogo from "../../images/longButtonIcons/devlogo.png"
-import instalogo from "../../images/longButtonIcons/instalogo.png"
-import github1 from "../../images/longButtonIcons/github1.png"
+import HomeIcon from "../../images/longButtonIcons/backtohome.svg"
+import github1 from "../../images/longButtonIcons/github2.png"
 import link from "../../images/longButtonIcons/link.svg"
 
 import keylock from "../../images/projects/keylock.jpg"
-import ssacard from "../../images/projects/ssacard.png"
-import ssa1 from "../../images/projects/ssa1.jpg"
-import ssa2 from "../../images/projects/ssa2.jpg"
 
-import devcard from "../../images/projects/devcard.jpg"
-import dev1 from "../../images/projects/dev1.png"
-import dev2 from "../../images/projects/dev2.jpg"
+import woodcard from "../../images/projects/woodcard.png"
 
 import fscard from "../../images/projects/fscard.jpg"
 import fs1 from "../../images/projects/fs1.jpg"
@@ -33,20 +26,12 @@ import acceptcard from "../../images/projects/acceptcard.png"
 import accept1 from "../../images/projects/accept1.png"
 import accept2 from "../../images/projects/accept2.png"
 
-import milkcard from "../../images/projects/milkcard.jpg"
-import milk1 from "../../images/projects/milk1.png"
-import milk2 from "../../images/projects/milk2.jpg"
-
 import ppbcard from "../../images/projects/ppbcard.png"
 import guncard from "../../images/projects/guncard.png"
 import lockcard from "../../images/projects/lockcard.png"
 import hangcard from "../../images/projects/hangcard.jpg"
-import sitecard from "../../images/projects/sitecard.png"
-import progresscard from "../../images/projects/progresscard.png"
 import e from "../../images/projects/e.png"
 
-import site1 from "../../images/projects/site1.png"
-import site2 from "../../images/projects/site2.png"
 import { useEffect } from 'react'
 
 
@@ -55,54 +40,20 @@ function ProjectsContent() {
         <Body>
             <ChainAnimation>
                 <p>
-                    These are some projects I've completed over the years (some of them on a team!), from woodworking to game development. The first card is what I'm working on right now, or at least what's on my mind.
+                    <br />
+                    These are some old experiences and hobby projects that I did purely for fun. Most of them ended up somewhere between terrible and okay. Sharing because why not.
                     <br /><br />
                 </p>
-                <LongButton img={HomeIcon} color="#300080" href={`/`} text={"Back to Homepage"} />
+                <LongButton img={HomeIcon} color="#301580" href={`/`} text={"Back to Home"} />
             </ChainAnimation>
             <br />
             <br />
-            <br />
-            <Project image={progresscard} title="Future Projects" month="W.I.P." year="">
-                <h2>What I'm Working On</h2>
+            <Project image={woodcard} title="" month="Aug" year="2023">
+                <h2>Mouse Trap Car Restoration</h2>
                 <br />
-                <p>a) Firmware and Powertrain Subteam member on the University of Waterloo Formula Electric team</p>
+                <p>My first memorable high school moment was absolutely demolishing my tech class at a mouse trap car competition with my friend Bay. But for the rest of high school, that car just sat in Bay's basement. After graduating, I felt it would be appropriate to end off my high school journey by fixing up the project that kicked it all off.</p>
                 <br />
-                <p>b) Hardware member on the UW Reality Labs team</p>
-                <br />
-                <p>c) A voice-controlled robotics "third arm" to help with building and tinkering.</p>
-                <br />
-                <p>d) A shoe attachment that turns it into a wirelessly controlled retractable roller skate</p>
-                <br />
-            </Project>
-            <Project image={milkcard} title="Milk Alarm" month="Nov" year="2023">
-                <h2>Spoiled Milk Alarm</h2>
-                <br />
-                <p>For my ECE198 Project Studio course at the University of Waterloo, my groupmate Rongbin and I designed and prototyped a milk bag holder that tells users if milk is spoiled. This device uses the STM32 Nucleo microcontroller and involves 5 inputs (2 buttons, a temperature sensor, a light sensor, and a force sensor) and 5 outputs (four LEDs and a buzzer).</p>
-                <br />
-                <p>Through this project I became familiar with C and microcontroller programming and learned the basics of circuit design. I also had the chance to use ADCs, PWM signal generation, and Git (repo linked below).</p>
-                <br />
-                <p>Below left: CAD model of the device. Below right: The circuitry monstrosity behind it all</p>
-                <br />
-                <img width="48%" style={{marginRight: "4%"}} src={milk1} alt="CAD model of the device" />
-                <img width="48%" src={milk2} alt="The circuitry monstrosity behind it all" />
-                <br />
-                <br />
-                <LongButton img={link} color="#300090" href={`https://github.com/HappyRedMapleLeaf/FreshGuard`} text={"Source Code"} />
-                <br />
-            </Project>
-            <Project image={sitecard} title="This Website!" month="Aug" year="2023">
-                <h2>This Website!</h2>
-                <br />
-                <p>This was a “three birds with one stone” project where I learned about React.js, TypeScript, and web development, made a portfolio for myself with links to my other profiles, and got to show off a bit to my friends.</p>
-                <br />
-                <p>I've built simple websites before, but for this one I put emphasis on: compatibility, having tested my website on 7 different browsers; user experience, ensuring accessibility and ease of navigation on all devices; performance, optimizing my “DIY” 3D wireframe render; and good code practise, adding some comments and making sure the code is reusable and repairable.</p>
-                <br />
-                <p>Below left: the 3D model rendered on the top of this page. Below right: an old testing version of this website</p>
-                <br />
-                <img width="48%" style={{marginRight: "4%"}} src={site1} alt="Robot model at the top of the page" />
-                <img width="48%" src={site2} alt="Old version of the website" />
-                <br />
+                <FixedEmbed src="https://www.youtube.com/embed/QcXDhBXKydI" />
                 <br />
             </Project>
             <Project image={hangcard} title="Hangboard" month="Jul" year="2023">
@@ -122,35 +73,10 @@ function ProjectsContent() {
                 <br />
                 <p>The main technical challenge with this game was the collision detection and bouncing of the circular player hitbox with the tile-based world. The level is also randomly generated and practically infinite, using some procedural generation-esque techniques. The player can load and save the game, where progress made in the world is stored in "chunks" (to avoid needing to save a very, very large array) similar to the system used in games like Minecraft.</p>
                 <br />
-                <LongButton img={link} color="#300080" href={`https://github.com/HappyRedMapleLeaf/Bounce_Back_Game`} text={"Source Code"} />
+                <LongButton img={link} color="#301570" href={`https://github.com/HappyRedMapleLeaf/Bounce_Back_Game`} text={"Source Code"} />
+                <br/>
                 <img width="48%" style={{marginRight: "4%"}} src={bounce1} alt="Screenshot of menu" />
                 <img width="48%" src={bounce2} alt="Screenshot of gameplay" />
-                <br />
-                <br />
-            </Project>
-            <Project image={devcard} title="Devolotics" month="Apr" year="2023">
-                <h2>FIRST Tech Challenge</h2>
-                <br />
-                <p>I was the captain of FIRST Tech Challenge team 19498 Devolotics for two years since its formation, leading the mechanical design and programming of our approximately 0.5x0.5x0.5m large robots over two seasons.</p>
-                <br />
-                <p>In my second year, after over 10,000 combined hours from our team, we became one of two Ontario teams to qualify to the World Championships in Houston, Texas. I'd say that this is by far my proudest achievement to date. Devolotics forever! Some pictures are below.</p>
-                <br />
-                <LongButton img={devlogo} color="#300070" href={`https://devolotics.github.io/`} text={"Our Website"} />
-                <img width="48%" style={{marginRight: "4%"}} src={dev1} alt="Our Robot" />
-                <img width="48%" src={dev2} alt="When we discovered that we qualified!" />
-                <br />
-                <br />
-            </Project>
-            <Project image={ssacard} title="SSA Non-Profit" month="Sep" year="2022">
-                <h2>Scarborough STEM Alliance</h2>
-                <br />
-                <p>My robotics team (see above) wanted to inspire our community with robotics, so as a group effort, we founded the Scarborough STEM Alliance (or SSA), a non-profit organization that has now reached thousands of youth through robotics and programming workshops at schools, libraries, and community centres.</p>
-                <br />
-                <p>Working with teachers, volunteers, other organizations, and even the government, I think we've significantly changed a few lives through our work, just like robotics has changed mine.</p>
-                <br />
-                <LongButton img={instalogo} color="#300060" href={`https://www.instagram.com/scarborough.stem.alliance/`} text={"SSA Instagram"} />
-                <img width="48%" style={{marginRight: "4%"}} src={ssa1} alt="Workshop at Forest Manor Public School" />
-                <img width="48%" src={ssa2} alt="Workshop at Toronto Public Library" />
                 <br />
                 <br />
             </Project>
@@ -163,7 +89,8 @@ function ProjectsContent() {
                 <br />
                 <p>Some other challenges included the somewhat realistic physics simulation in the minigame, as well as the point-and-click movement.</p>
                 <br />
-                <LongButton img={link} color="#300050" href={`https://github.com/HappyRedMapleLeaf/Accept_Game`} text={"Source Code"} />
+                <LongButton img={link} color="#301560" href={`https://github.com/HappyRedMapleLeaf/Accept_Game`} text={"Source Code"} />
+                <br/>
                 <img width="48%" style={{marginRight: "4%"}} src={accept1} alt="Screenshot of gameplay" />
                 <img width="48%" src={accept2} alt="Screenshot of gameplay" />
                 <br />
@@ -182,7 +109,7 @@ function ProjectsContent() {
                 <br />
                 <p>An incredibly silly Discord bot I made with Python - the full story is on the GitHub repo's readme. Although I did it "for the memes", I learned about using API's, asynchronous programming, web servers, authentication, databases, and more fancy web app related things that I'm sure will be helpful in the future.</p>
                 <br />
-                <LongButton img={github1} color="#300040" href={`https://github.com/HappyRedMapleLeaf/E-Bot`} text={"Code Repository"} />
+                <LongButton img={github1} color="#301550" href={`https://github.com/HappyRedMapleLeaf/E-Bot`} text={"Code Repository"} />
                 <br />
             </Project>
             <Project image={ppbcard} title="Pong Revolver" month="Jan" year="2021">
@@ -232,7 +159,7 @@ export default function Projects() {
 
     return (
         <>
-            <Header text="Projects" rotationAxis="y" object="./resources/robot.obj" debug={false} fov={Math.PI / 4} yTranslate={-0.45} zTranslate={2}/>
+            <Header text="Projects" rotationAxis="y" object="./resources/bulb.obj" debug={false} fov={Math.PI / 4} xTranslate={0} yTranslate={-0.1} zTranslate={0.4}/>
             <ProjectsContent />
         </>
     )
