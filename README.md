@@ -1,7 +1,3 @@
-## Future Plans
-- Recreate with different frameworks to learn
-- Load more button/scroll to load on projects page for faster loading time
-
 ## Credits & Links
 Code Credits: \
 https://www.youtube.com/watch?v=ih20l3pJoeU \
