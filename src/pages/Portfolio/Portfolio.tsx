@@ -82,7 +82,7 @@ function PortfolioContent() {
             <Project image={milkcard} title="FreshGuard" month="Nov" year="2023">
                 <h2>Spoiled Milk Alarm</h2>
                 <br />
-                <p>For my ECE198 Project Studio course at the University of Waterloo, my groupmate Rongbin and I designed and prototyped a milk bag holder that tells users if milk is spoiled. This device uses the STM32 Nucleo microcontroller and involves 5 inputs (2 buttons, a temperature sensor, a light sensor, and a force sensor) and 5 outputs (four LEDs and a buzzer).</p>
+                <p>My friend Rongbin and I designed and prototyped a milk bag holder that tells users if milk is spoiled. This device uses the STM32 Nucleo microcontroller and involves 5 inputs (2 buttons, a temperature sensor, a light sensor, and a force sensor) and 5 outputs (four LEDs and a buzzer).</p>
                 <br />
                 <p>Through this project I became familiar with C and microcontroller programming and learned the basics of circuit design. I also had the chance to use ADCs, PWM signal generation, and Git (repo linked below).</p>
                 <br />

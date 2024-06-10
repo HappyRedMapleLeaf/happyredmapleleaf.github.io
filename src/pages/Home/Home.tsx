@@ -32,7 +32,7 @@ function HomeContent () {
                     Feel free to email me as well:&nbsp;&nbsp;<code style={{fontSize:'20px'}}>evan.li@live.ca</code>
                     <br/><br/>
                 </p>
-                <LongButton img={ResumeIcon} color="#301580" href="https://github.com/HappyRedMapleLeaf/happyredmapleleaf.github.io/blob/main/public/logo192.png" text={"Resume (PLACEHOLDER)"} />
+                <LongButton img={ResumeIcon} color="#301580" file={window.location.origin + "/resources/EvanLi_Resume_Generic_20240610.pdf"} text={"Resume"} />
                 <br/>
                 <LongButton img={LinkedInLogo} color="#301570" href="https://www.linkedin.com/in/evan-zc-li/" text={"LinkedIn"} />
                 <br/>
