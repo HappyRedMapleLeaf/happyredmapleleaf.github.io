@@ -43,7 +43,7 @@ function PortfolioContent() {
                     These are some highlights of my experiences outside of school and work, from design teams to side projects. For a more formal summary, including co-ops, check out my resume!
                     <br /><br />
                 </p>
-                <LongButton img={ResumeIcon} color="#301590" href={`https://github.com/HappyRedMapleLeaf/happyredmapleleaf.github.io/blob/main/public/logo192.png`} text={"Resume (PLACEHOLDER)"} />
+                <LongButton img={ResumeIcon} color="#301590" file={window.location.origin + "/resources/EvanLi_Resume_Generic.pdf"} text={"Resume"} />
                 <br />
                 <LongButton img={HomeIcon} color="#301580" href={`/`} text={"Back to Home"} />
             </ChainAnimation>
