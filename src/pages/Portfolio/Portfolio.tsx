@@ -27,7 +27,7 @@ import armcard from "../../images/projects/arm.png"
 import fecard from "../../images/projects/fe.png"
 
 import sitecard from "../../images/projects/sitecard.png"
-import progresscard from "../../images/projects/progresscard.png"
+// import progresscard from "../../images/projects/progresscard.png"
 
 import site1 from "../../images/projects/site1.png"
 import site2 from "../../images/projects/site2.png"
@@ -49,14 +49,14 @@ function PortfolioContent() {
             </ChainAnimation>
             <br />
             <br />
-            <Project image={progresscard} title="Future Projects" month="W.I.P." year="">
-                <h2>Some stuff I'll start eventually...</h2>
+            <Project image={armcard} title="6DoF Robot Arm" month="Current" year="">
+                <h2>6DoF Robot Arm</h2>
                 <br />
-                <p>a) A shoe attachment that turns it into a wireless retractable roller skate</p>
+                <p>There is no end goal with this project other than to learn as much as possible about robotics and whatever other fields I stumble into.</p>
                 <br />
-                <p>b) Working with UW Reality Labs to design a new tracking camera</p>
+                <p>I designed and built this arm from scratch, and so far I have programmed it to be controlled with a keyboard and an IMU with inverse kinematics. It runs on an STM32 microcontroller and plugs into my laptop which does the keyboard handling and the more difficult math. I use ROS2 to help out and RViz to visualize the IMU heading (soon I will try to simulate the whole arm on Rviz!).</p>
                 <br />
-                <p>c) Nothing else in the works yet!</p>
+                <p>I also plan on learning PCB design while I try to find a solution to the mess of about 30 wires that I currently have to deal with. Who knows what else this project will teach me?</p>
                 <br />
             </Project>
             <Project image={fecard} title="UWFE" month="Current" year="">
@@ -67,16 +67,6 @@ function PortfolioContent() {
                 <p>So far, I've been in charge of maintaining and adding new features to our LCD dashboard. I'm also starting work on our Telematics Control Unit (TCU), which logs all messages and sensor readings within the car for debugging and tuning purposes. Specifically, I'm writing a driver for the IMU on the TCU board, and I've helped a bit with writing data to the SD card. I've also helped with minor bugs, safety, and rule compliance issues.</p>
                 <br />
                 <p>Being a computer engineering student, I've been admittely a bit unproductive on the powertrain team which is heavy on mechanical design and related skills, but I'm slowly getting the hang of things and hoping to contribute more soon!</p>
-                <br />
-            </Project>
-            <Project image={armcard} title="Arm Extension" month="Current" year="">
-                <h2>Robotic Glove Arm Thing</h2>
-                <br />
-                <p>I have no idea where I'm going with this, but I'm making a lightweight robotic arm with 5 degrees of freedom. There are a few things I want to learn with this, including inverse kinematics and motion profiling.</p>
-                <br />
-                <p>Currently my leading idea is to put the arm on a glove at the back of my hand so that I have a third helping hand when I'm doing something with my hands, like soldering. I might also voice-control it with an embedded low-power AI system, and I might also put an IMU at the end of the arm for automatic stabilization.</p>
-                <br />
-                <p>I'm still in the very early stages, and pretty much everything about this is subject to change!</p>
                 <br />
             </Project>
             <Project image={milkcard} title="FreshGuard" month="Nov" year="2023">
