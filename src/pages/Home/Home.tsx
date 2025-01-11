@@ -24,10 +24,10 @@ function HomeContent () {
                     Welcome!
                 </h2>
                 <p>
-                    I'm Evan Li, a first-year university student from Scarborough, Ontario, Canada.
+                    I'm Evan Li, a university student from Scarborough, Ontario, Canada.
                 </p>
                 <p>
-                    This website is mainly for sharing more about my personal life. For a more formal profile, check out my resume, Linkedin and/or my GitHub.
+                    This website is mainly for sharing more about my personal life. For a more formal profile, check out my resume, Linkedin and/or GitHub.
                     <br/><br/>
                     Feel free to email me as well:&nbsp;&nbsp;<code style={{fontSize:'20px'}}>evan.li@live.ca</code>
                     <br/><br/>
