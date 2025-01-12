@@ -27,16 +27,18 @@ function HomeContent () {
                     I'm Evan Li, a university student from Scarborough, Ontario, Canada.
                 </p>
                 <p>
-                    This website is mainly for sharing more about my personal life. For a more formal profile, check out my resume, Linkedin and/or GitHub.
+                    This website is mainly for sharing more about my personal life. For a more formal profile, check out my resume, portfolio, Linkedin and/or GitHub.
                     <br/><br/>
                     Feel free to email me as well:&nbsp;&nbsp;<code style={{fontSize:'20px'}}>evan.li@live.ca</code>
                     <br/><br/>
                 </p>
                 <LongButton img={ResumeIcon} color="#301580" file={window.location.origin + "/resources/EvanLi_Resume_Generic.pdf"} text={"Resume"} />
                 <br/>
-                <LongButton img={LinkedInLogo} color="#301570" href="https://www.linkedin.com/in/evan-zc-li/" text={"LinkedIn"} />
+                <LongButton img={PortfolioIcon} color="#301570" file={window.location.origin + "/resources/portfolio.pdf"} text={"Portfolio"} />
                 <br/>
-                <LongButton img={GitHubLogo} color="#301560" href="https://github.com/HappyRedMapleLeaf" text={"GitHub"} />
+                <LongButton img={LinkedInLogo} color="#301560" href="https://www.linkedin.com/in/evan-zc-li/" text={"LinkedIn"} />
+                <br/>
+                <LongButton img={GitHubLogo} color="#301550" href="https://github.com/HappyRedMapleLeaf" text={"GitHub"} />
             </ChainAnimation>
 
             <br/><br/><br/><hr />
@@ -52,12 +54,7 @@ function HomeContent () {
                     My hobbies include making music and gaming, and I really enjoy cooking. I also love the outdoors — camping, fishing, snowboarding, and going on walks or bike rides.
                 </p>
                 <p>
-                    Check out my portfolio for a timeline of the stuff I've been working on. I've included some in-progress projects as well!
-                    <br/><br/>
-                </p>
-                <LongButton img={PortfolioIcon} color="#301550" href={`/portfolio`} text={"Portfolio"} />
-                <p>
-                    I have a bunch of other projects and experiences that are either really old or unrelated to my primary interests. These ones were just for fun and certainly not related to any career goals, but I'm proud of them all the same:
+                    Aside from those mentioned in my portfolio, I have a bunch of other projects and experiences that are either really old or unrelated to my primary interests. These ones were just for fun and certainly not related to any career goals, but I'm proud of them all the same:
                     <br/><br/>
                 </p>
                 <LongButton img={ProjectsIcon} color="#301540" href={`/projects`} text={"Other Projects"} />

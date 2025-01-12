@@ -1,14 +1,13 @@
 import "./App.css"
 
 import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 
 import Footer from './components/Footer/Footer'
 import ScrollButton from "./components/ScrollButton/ScrollButton"
 
 import Home from "./pages/Home/Home"
 import Projects from "./pages/Projects/Projects"
-import Portfolio from "./pages/Portfolio/Portfolio"
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -26,7 +25,7 @@ export default function App() {
             <ScrollToTop />
                 <Routes>
                     <Route path='/projects' element={<Projects />}></Route>
-                    <Route path='/portfolio' element={<Portfolio />}></Route>
+                    <Route path='/portfolio' element={<Navigate to="/" />}></Route>
                     <Route path='/' element={<Home />}></Route>
                 </Routes>
             <Footer />

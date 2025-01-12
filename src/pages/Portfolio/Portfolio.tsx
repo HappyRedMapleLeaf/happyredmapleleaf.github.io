@@ -7,13 +7,8 @@ import Project from '../../components/Project/Project'
 
 import HomeIcon from "../../images/longButtonIcons/home.svg"
 import devlogo from "../../images/longButtonIcons/devlogo.png"
-import instalogo from "../../images/longButtonIcons/instalogo.png"
 import ResumeIcon from "../../images/longButtonIcons/doc.svg"
 import link from "../../images/longButtonIcons/link.svg"
-
-import ssacard from "../../images/projects/ssacard.png"
-import ssa1 from "../../images/projects/ssa1.jpg"
-import ssa2 from "../../images/projects/ssa2.jpg"
 
 import devcard from "../../images/projects/devcard.jpg"
 import dev1 from "../../images/projects/dev1.png"
@@ -110,20 +105,6 @@ function PortfolioContent() {
                 <br/>
                 <img width="48%" style={{marginRight: "4%"}} src={dev1} alt="Our Robot" />
                 <img width="48%" src={dev2} alt="When we discovered that we qualified!" />
-                <br />
-                <br />
-            </Project>
-            <Project image={ssacard} title="SSA Non-Profit" month="Sep" year="2022">
-                <h2>Scarborough STEM Alliance</h2>
-                <br />
-                <p>My robotics team (see above) wanted to inspire our community with robotics, so as a group effort, we founded the Scarborough STEM Alliance (or SSA), a non-profit organization that has now reached thousands of youth through robotics and programming workshops at schools, libraries, and community centres.</p>
-                <br />
-                <p>Working with teachers, volunteers, other organizations, and even the government, I think we've significantly changed a few lives through our work, just like robotics has changed mine.</p>
-                <br />
-                <LongButton img={instalogo} color="#301550" href={`https://www.instagram.com/scarborough.stem.alliance/`} text={"SSA Instagram"} />
-                <br/>
-                <img width="48%" style={{marginRight: "4%"}} src={ssa1} alt="Workshop at Forest Manor Public School" />
-                <img width="48%" src={ssa2} alt="Workshop at Toronto Public Library" />
                 <br />
                 <br />
             </Project>
